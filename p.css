@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(163, 209, 205);
+    font-family: roboto, sans-serif;
+    margin: 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+h1{
+    margin: 10px;
+    align-items: center;
+}
+.box{
+    background-color: rgb(82, 33, 129);
+    color: rgb(210, 70, 32);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px rgb(137, 99, 79);
+    transform: translate x(200%);
+    transition: transform 0.45 ease;
+}
+.box.show{
+    transform: translate(0);
+}
+
+.box :nth-of-type(even){
+transform: translate(-200%);
+
+}
+.box h2{
+    font-size: 45px;
+}
